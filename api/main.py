@@ -6,8 +6,9 @@ CORS(app)
 
 @app.route('/questions', methods=['GET'])
 def get_questions():
-    questions =[
-        {"category": "Science", "difficulty": 100, "question": "What is the chemical symbol for water?", "answer": "H2O"},
-        {"category": "Science", "difficulty": 100, "question": "What is the chemical symbol for water?", "answer": "H2O"},
-    ]
-    return jsonify(questions)
+    # questions =[
+    #     {"category": "Science", "difficulty": 100, "question": "What is the chemical symbol for water?", "answer": "H2O"},
+    #     {"category": "Science", "difficulty": 100, "question": "What is the chemical symbol for water?", "answer": "H2O"},
+    # ]
+    # return jsonify(questions)
+    return jsonify([{"category": "Linear Algebra", "prompt": "Find det([[1,2],[3,4]])", "answer": "-2"}])
